@@ -30,17 +30,22 @@
                             <div class="row">
                                 <div class="col-lg">
                                     <div class="p-5">
-                                        <form >
+                                        <form>
                                             <div class="mb-3">
-                                              <label id="div" for="exampleFormControlInput1" class="form-label">Email address</label>
-                                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                                          </div>
-                                          <div class="mb-3">
-                                              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                          </div>
-                                          <button>kirim</button>
-                                      </form>
+                                                <label id="div" for="exampleFormControlInput1" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            </div>
+                                            <button>kirim</button>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -48,32 +53,31 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Bootstrap core JavaScript-->
-    <script src="<?= base_url('assets/');  ?>vendor/jquery/jquery.min.js"></script>
-    <script src="<?= base_url('assets/');  ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript-->
+        <script src="<?= base_url('assets/');  ?>vendor/jquery/jquery.min.js"></script>
+        <script src="<?= base_url('assets/');  ?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="<?= base_url('assets/');  ?>vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="<?= base_url('assets/');  ?>vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for all pages-->
-    <script src="<?= base_url('assets/');  ?>js/sb-admin-2.min.js"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="<?= base_url('assets/');  ?>js/sb-admin-2.min.js"></script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <script>
-        $(document).ready(function(){
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
 
-          $(document).ajaxSuccess(function(){
-          
-            alert("data berhasil dikirim");
-        });
-          $("button").click(function(){
-            $("#div").load("okpunya");
+                $(document).ajaxSuccess(function() {
 
-        });
-      });
-  </script>
+                    alert("data berhasil dikirim");
+                });
+                $("button").click(function() {
+                    $("#div").load("okpunya");
 
-</body>
+                });
+            });
+        </script>
 
-</html>
+    </body>
+
+    </html>
